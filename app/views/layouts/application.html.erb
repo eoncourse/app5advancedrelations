@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App5advancedrelations</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Advanced relations</h1>
+<ul>
+  <li><%= link_to 'Users', users_path %></li>
+  <li><%= link_to 'Projects', projects_path %></li>
+</ul>
+<%= yield %>
+
+</body>
+</html>
